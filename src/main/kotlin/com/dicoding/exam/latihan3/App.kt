@@ -30,7 +30,14 @@ package com.dicoding.exam.latihan3
  *
  */
 fun <T> checkType(args: T): String {
-    return ""
+    return when(args){
+        is Int -> "Yes! It's Integer"
+        is String -> "Yes! It's String"
+        is Double -> "Yes! It's Double"
+        is List<*> -> "Yes! It's List"
+        is Map<*,*> -> "Yes! It's Map"
+        else -> "Wrong Input"
+    }
 }
 
 fun main() {
