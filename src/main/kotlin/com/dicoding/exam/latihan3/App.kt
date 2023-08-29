@@ -31,12 +31,12 @@ package com.dicoding.exam.latihan3
  */
 fun <T> checkType(args: T): String {
     return when(args){
-        is Int -> "Yes! It's Integer"
-        is String -> "Yes! It's String"
-        is Double -> "Yes! It's Double"
-        is List<*> -> "Yes! It's List"
-        is Map<*,*> -> "Yes! It's Map"
-        else -> "Wrong Input"
+        is Int -> "Yes! it's Integer"
+        is String -> "Yes! it's String"
+        is Double -> "Yes! it's Double"
+        is List<*> -> "Yes! it's List"
+        is Map<*,*> -> "Yes! it's Map"
+        else -> ""
     }
 }
 
